@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <h4>Projects</h4>
+</div>
+
+{% for project in projects %}
+<div class="container">
+    
+    <div class="card mb-2">
+        <div class="card-body">
+            <div class="row g-0">
+                <div class="col-md-3">
+                    <div class="ratio ratio-16x9">
+                        <img src="{{ project.image.url }}" class="rounded" alt="{{project.title}}">
+                    </div>
+                </div>
+                <div class="col-md-7 ps-md-3 pt-3 pt-md-0 d-flex flex-column">
+                    
+                        <h2 class="card-title h5">
+                                <a href="{{ project.get_absolute_url }}">
+                                {{ project.title }}
+                                </a>
+                        </h2>
+
+                        <div class="text-muted">
+                            <small>
+                                进步: {{ project.progress }}% 开始: {{ project.created_on }} Budget {{ project.budget }}
+                            </small>
+                        </div>                    
+                        <p class="card-text mb-auto py-2">{{ project.description|safe|striptags|truncatechars:200 }}</p>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   
+{% endfor %}
+
+{% endblock content %}
+
