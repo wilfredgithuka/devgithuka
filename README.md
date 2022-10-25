@@ -29,3 +29,7 @@
     <a href="https://github.com/wilfredgithuka/devgithuka">Request Feature</a>
   </p>
 </div>
+
+### Images
+* Home Best Size: 1024x582
+* Project Header Best Size: 1024x300

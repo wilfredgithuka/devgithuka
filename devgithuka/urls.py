@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-
 from django.conf.urls.static import static
 from django.conf import settings
+
+from django.contrib.flatpages import views
 
 urlpatterns = [
     path('', include('home.urls')),
@@ -25,6 +26,8 @@ urlpatterns = [
     path('posts/', include ('weblog.urls')),
     path('projects/', include ('projects.urls')),
     path('ckeditor/',include('ckeditor_uploader.urls')),
+    #url(r'^pages/', include('django.contrib.flatpages.urls')),
+    #path('about/', views.flatpage, {'url': '/about/'}, name='about'),
 
 ]
 

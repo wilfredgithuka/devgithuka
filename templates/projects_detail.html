@@ -12,10 +12,13 @@
             <h1>{{project.title}}</h1>
             <h3>{{project.tagline}}</h3>
             <p class="text-muted">
-                开始: {{ project.created_on }} | 
-                进步: {{ project.progress }} | 
+                Start: {{ project.created_on }} | 
+                Progress: {{ project.progress }}% | 
                 Github: {{ project.github }} | 
                 Budget: {{ project.budget }}
+            </p>
+            <p class="text-muted">
+                Project Manual(PDF): {{ project.manuals }} 
             </p>
         </div>
 
