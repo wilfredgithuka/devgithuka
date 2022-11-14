@@ -12,8 +12,8 @@
         <a href="{% url "weblog:post_list" %}" class="btn btn-primary my-2">DevLogs 手册</a>
         <a href="{% url "projects:projects_list" %}" class="btn btn-secondary my-2">Projects 项目</a>
         <a href="#" class="btn btn-secondary my-2">Manuals 说明书</a>
-        <a href="#" class="btn btn-secondary my-2">About 关于我</a>
-        <a href="#" class="btn btn-secondary my-2">GPG Public Key</a>
+        <a href="{% url "about" %}" class="btn btn-secondary my-2">About 关于我</a>
+        <a href="{% url "gnupg" %}" class="btn btn-secondary my-2">GPG Public Key</a>
       </p>
     </div>
   </section>

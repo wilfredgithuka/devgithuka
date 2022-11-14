@@ -90,7 +90,9 @@ USE_TZ = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = 'static/'
+# STATIC_ROOT = '/var/www/devgithuka/static'
 
 MEDIA_URL = '/media/'
 

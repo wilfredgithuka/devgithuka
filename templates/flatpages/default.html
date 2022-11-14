@@ -2,37 +2,23 @@
 
 {% block content %}
 
-<style>
-    body {
-        font-family: "Roboto", sans-serif;
-        font-size: 18px;
-        background-color: #fdfdfd;
-    }
+<section class="jumbotron text-center">
+  <div class="container">
+    
+    <p class="lead text-muted">Embeeded Systems | IoT | Low Level C | On this site is a collection of my projects. Some are complete while others require some more time to be done. Bridging the technology gap between my continent and the rest of the world</p>
+    <p>
+      <a href="{% url "weblog:post_list" %}" class="btn btn-primary my-2">DevLogs 手册</a>
+      <a href="{% url "projects:projects_list" %}" class="btn btn-secondary my-2">Projects 项目</a>
+      <a href="#" class="btn btn-secondary my-2">Manuals 说明书</a>
+      <a href="{% url "about" %}" class="btn btn-secondary my-2">About 关于我</a>
+      <a href="{% url "gnupg" %}" class="btn btn-secondary my-2">GPG Public Key</a>
+    </p>
+  </div>
+</section>
 
-    .head_text {
-        color: white;
-    }
-    .head_logo>img {
-        height: 100%;
-        padding: 15px;
-        width: auto;
-    }
-
-    .card {
-        box-shadow: 0 16px 48px #E3E7EB;
-    }
-
-</style>
-<h3>Flat Page</h3>
 <div class="container">
-  <div class="row">
-    <div class="col-md-8 card mb-4  mt-3 left  top">
-      <div class="card-body">
         <h1>{% block title %} {{ flatpage.title }} {% endblock title %}</h1>
         <p class="card-text ">{{ flatpage.content | safe }}</p>
-      </div>
-    </div>
-  </div>
 </div>
 
 {% endblock content %}

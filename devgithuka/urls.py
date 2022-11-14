@@ -27,7 +27,8 @@ urlpatterns = [
     path('projects/', include ('projects.urls')),
     path('ckeditor/',include('ckeditor_uploader.urls')),
     #url(r'^pages/', include('django.contrib.flatpages.urls')),
-    #path('about/', views.flatpage, {'url': '/about/'}, name='about'),
+    path('about/', views.flatpage, {'url': '/about/'}, name='about'),
+    path('gnupg/', views.flatpage, {'url': '/gnupg/'}, name='gnupg'),
 
 ]
 
