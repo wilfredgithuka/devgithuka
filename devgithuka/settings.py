@@ -150,20 +150,20 @@ CKEDITOR_CONFIGS = {
         'tabSpaces': 4,
         'extraPlugins': ','.join([
             'uploadimage', # the upload image feature
-            # your extra plugins here
-            'div',
-            'autolink',
-            'autoembed',
-            'embedsemantic',
-            'autogrow',
-            'devtools',
-            'widget',
-            'lineutils',
-            'clipboard',
-            'dialog',
-            'dialogui',
-            'elementspath',
-            'codesnippet',
+            # # your extra plugins here
+            # #'div',
+            # 'autolink',
+            # 'autoembed',
+            # #'embedsemantic',
+            # 'autogrow',
+            # 'devtools',
+            # 'widget',
+            # 'lineutils',
+            # 'clipboard',
+            # 'dialog',
+            # 'dialogui',
+            # #'elementspath',
+            # 'codesnippet',
         ]),
     }
 }
